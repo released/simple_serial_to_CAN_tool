@@ -1,0 +1,4 @@
+#pragma once
+
+#define SERIAL_CAN_TOOL_VERSION L"0.1.0.0027"
+#define SERIAL_CAN_TOOL_BUILD_TIME L"2026-05-07 17:23:10"
