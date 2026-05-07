@@ -17,11 +17,6 @@ The intended update path is:
 - `PC Tool -> EVB (UART / USB VCOM / USB HID)`
 - `EVB -> Target MCU (CAN ISP)`
 
-
-![image](https://github.com/released/simple_serial_to_CAN_tool/blob/main/SerialToCanIspToolMfc.jpg) 
-
-
-
 ## Requirements
 
 - Windows 10/11 x64
