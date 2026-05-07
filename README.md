@@ -88,7 +88,7 @@ Build the project that matches your EVB board.
 
 1. Build the PC tool.
 2. Build and flash the matching EVB firmware.
-3. Connect the PC tool to the EVB over Serial / VCOM / HID.
+3. Connect the PC tool to the EVB over USB VCOM.
 4. Connect the EVB CAN bus to the target board.
 5. Load the target application binary.
 6. Open the transport and run:
