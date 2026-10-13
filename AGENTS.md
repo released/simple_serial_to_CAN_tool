@@ -118,9 +118,13 @@
         - post-ACK settle delay
         - page-boundary first-word duplicate guard
         - page-boundary TX cleanup slot
-      - current diagnostic baseline:
-        - `BRIDGE_TARGET_PAGE_BOUNDARY_BYTES = 2048`
+      - current diagnostic baseline for M0A21/M0A23 ISP_CAN target:
+        - `BRIDGE_TARGET_PAGE_BOUNDARY_BYTES = 512`
         - `BRIDGE_TARGET_PAGE_BOUNDARY_DELAY_MS = 100`
+        - `BRIDGE_TARGET_PAGE_ERASE_GUARD_BYTES = 4`
+        - `ProgramBegin` optional payload extension carries tool-provided `page_boundary_ack_timeout_ms`
+        - bridge applies that timeout only to the first 4-byte word at each `512-byte` boundary
+      - the same baseline should be kept aligned across existing bridge EVB template projects
     - NuLink2-compatible warmup before first APROM write:
       - issue `A2000000` READ_CONFIG sequence (`14` frames) in `ProgramBegin`
       - target boot log can align better with reference `teraterm.log` pattern

@@ -848,7 +848,8 @@ void CMainFrame::OnBnClickedProgram() {
     SetProgress(15, L"Progress:");
 
     AppendLog(L"Program start: block=" + std::to_wstring(opt.program_block_size) +
-              L", prefetch=1 (NuLink2-style single in-flight), max_retry=1");
+              L", prefetch=1 (NuLink2-style single in-flight), max_retry=1, boundary=512B-first-word, boundary_ack_timeout=" +
+              std::to_wstring(opt.page_boundary_ack_timeout_ms) + L"ms");
 
     bool last_logged = false;
     const bool ok = bridge_client_.ProgramImage(

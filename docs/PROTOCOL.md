@@ -83,7 +83,12 @@ CRC parameters:
   - `block_size` (uint16 LE)
   - `window` (uint8, 2..4)
   - `flags` (uint8)
-    - reserved for compatibility in current profile (ignored by EVB)
+    - bit0: disable second-read compatibility path (reserved)
+    - bit1: include per-word ACK trace data in successful `ProgramBlock` response
+    - bit2: include page-boundary summary data in `ProgramEnd`
+  - `page_boundary_ack_timeout_ms` (uint32 LE, optional)
+    - tool-provided worst-case timeout for the first 4-byte word at each `512-byte` boundary
+    - if omitted, EVB falls back to its board default
 
 ### ProgramBlock (`0x23`)
 - Request payload:

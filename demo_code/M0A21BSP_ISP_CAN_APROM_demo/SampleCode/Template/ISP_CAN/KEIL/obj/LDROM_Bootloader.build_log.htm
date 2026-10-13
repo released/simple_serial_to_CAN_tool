@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: admin admin admin Flex license: MDK Professional 5.41 (Flex): 4 user(s) (mdk_pro) Support: May 2026
+ 
+Tool Versions:
+Toolchain:       MDK Professional 5.41 (Flex): 4 user(s)  Version: 5.41.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      Nu_Link.dll V3.23
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\SourceCode\python\simple_serial_to_CAN_tool\demo_code\M0A21BSP_ISP_CAN_APROM_demo\SampleCode\Template\ISP_CAN\KEIL\ISP_CAN.uvprojx
+Project File Date:  05/13/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'ISP_CAN'
+creating list file for system_M0A21.c...
+creating preprocessor file for main.c...
+compiling system_M0A21.c...
+creating preprocessor file for system_M0A21.c...
+compiling main.c...
+creating list file for main.c...
+assembling startup_M0A21_isp.s...
+creating preprocessor file for can_user.c...
+creating preprocessor file for fmc_user.c...
+creating list file for fmc_user.c...
+compiling fmc_user.c...
+creating list file for can_user.c...
+compiling can_user.c...
+linking...
+Program Size: Code=1724 RO-data=224 RW-data=8 ZI-data=544  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin ".\obj\LDROM_Bootloader.axf" --output ".\obj\LDROM_Bootloader.bin"
+After Build - User command #2: fromelf --text -c ".\obj\LDROM_Bootloader.axf" --output ".\obj\LDROM_Bootloader.txt"
+".\obj\LDROM_Bootloader.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Nuvoton
+                https://github.com/OpenNuvoton/cmsis-packs/raw/master/Nuvoton_DFP/Nuvoton.NuMicroM0_DFP.1.0.2.pack
+                Nuvoton::NuMicroM0_DFP@1.0.2
+                Nuvoton ARM Cortex-M0 NuMicro Family Device Support
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

@@ -1,0 +1,18 @@
+--cpu=Cortex-M23
+".\obj\system_m253.o"
+".\obj\startup_m253.o"
+".\obj\retarget.o"
+".\obj\uart.o"
+".\obj\sys.o"
+".\obj\clk.o"
+".\obj\timer.o"
+".\obj\canfd.o"
+".\obj\main.o"
+".\obj\bridge_host_link.o"
+".\obj\bridge_hw_abstraction.o"
+".\obj\bridge_nuvoisp_can.o"
+".\obj\misc_config.o"
+--strict --scatter "..\..\..\Library\Device\Nuvoton\M253\Source\ARM\APROM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\lst\Template.map" -o .\obj\Template.axf

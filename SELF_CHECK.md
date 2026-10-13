@@ -209,6 +209,10 @@ Result: PASS / FAIL
   - duplicate guard
   - TX cleanup slot
 - Verify current A/B delay value is `100ms` for both pre-TX and post-ACK page-boundary delay paths.
+- Verify current M0A21/M0A23 ISP_CAN target page-boundary basis is `512 bytes`.
+- Verify current first-word erase guard width is `4 bytes` so worst-case timeout is only applied to the first word at each `512-byte` boundary.
+- Verify `ProgramBegin` optional timeout extension is accepted and used as the page-boundary first-word ACK timeout override.
+- Verify the same baseline is propagated to other maintained bridge EVB template projects before claiming cross-platform consistency.
 
 Result: PASS / FAIL
 

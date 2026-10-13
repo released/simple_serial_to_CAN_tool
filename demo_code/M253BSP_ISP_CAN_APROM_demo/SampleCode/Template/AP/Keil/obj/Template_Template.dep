@@ -1,0 +1,410 @@
+Dependencies for Project 'Template', Target 'Template': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (..\..\..\Library\Device\Nuvoton\M253\Source\system_M253.c)(0x67A9BC52)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/system_m253.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\Device\Nuvoton\M253\Source\ARM\startup_M253.c)(0x67A9BC52)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/startup_m253.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\retarget.c)(0x68F09489)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/retarget.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\uart.c)(0x67A9BC52)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/uart.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\sys.c)(0x68F09489)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/sys.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\clk.c)(0x6619CC6E)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/clk.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\timer.c)(0x68F09489)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/timer.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\..\..\Library\StdDriver\src\gpio.c)(0x67A9BC52)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/gpio.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+F (..\main.c)(0x68D26C29)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/main.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\NuMicro.h)(0x6201C218)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\M253.h)(0x67A9BC52)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm23.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\system_M253.h)(0x67A9BC52)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\bpwm_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\canfd_reg.h)(0x655412EB)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\clk_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\crc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\eadc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\fmc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\gpio_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\i2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\pdma_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\rtc_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\spi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\sys_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\timer_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uuart_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\ui2c_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\uspi_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\usbd_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\Device\Nuvoton\M253\Include\wwdt_reg.h)(0x63F334E7)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\bpwm.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\canfd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\eadc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\rtc.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\spi.h)(0x68F09489)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\usbd.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x67A9BC52)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x67A9BC52)
+I (..\misc_config.h)(0x68D27EA2)
+F (..\misc_config.c)(0x68F24BEE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../Library/CMSIS/Core/Include -I ../../../Library/StdDriver/inc -I ../../../Library/Device/Nuvoton/M253/Include -I ../../Template-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.0/Device/M253/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/misc_config.o -MMD)
+I (..\misc_config.h)(0x68D27EA2)

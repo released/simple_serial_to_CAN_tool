@@ -99,6 +99,8 @@
 #define PROGRAM_BEGIN_FLAG_DISABLE_SECOND_READ      (0x01u)
 #define PROGRAM_BEGIN_FLAG_ACK_TRACE_WORD_DATA      (0x02u)
 #define PROGRAM_BEGIN_FLAG_PAGE_DIAG                (0x04u)
+#define PROGRAM_BEGIN_PAYLOAD_V1_SIZE               (12u)
+#define PROGRAM_BEGIN_PAYLOAD_V2_SIZE               (16u)
 
 typedef struct {
     uint8_t valid;
@@ -132,6 +134,7 @@ typedef struct {
     uint32_t image_crc32;
     uint16_t block_size;
     uint8_t window;
+    uint32_t page_boundary_ack_timeout_ms;
     uint32_t expected_block_index;
     uint32_t programmed_size;
     uint32_t crc32_running;
@@ -543,10 +546,16 @@ static uint8_t can_wait_ack_blocking(uint32_t expect_cmd,
 
 static uint32_t program_word_ack_timeout_ms(uint32_t addr)
 {
+    uint32_t timeout_ms = BRIDGE_TARGET_PAGE_ERASE_ACK_TIMEOUT_MS;
+
+    if (s_prog_ctx.page_boundary_ack_timeout_ms != 0u) {
+        timeout_ms = s_prog_ctx.page_boundary_ack_timeout_ms;
+    }
+
 #if (BRIDGE_TARGET_PAGE_ERASE_DIAG_ENABLE != 0u)
     if ((BRIDGE_TARGET_PAGE_SIZE_DIAG_BYTES != 0u) &&
         ((addr % BRIDGE_TARGET_PAGE_SIZE_DIAG_BYTES) < BRIDGE_TARGET_PAGE_ERASE_GUARD_BYTES)) {
-        return BRIDGE_TARGET_PAGE_ERASE_ACK_TIMEOUT_MS;
+        return timeout_ms;
     }
 #else
     (void)addr;
@@ -990,8 +999,10 @@ static void handle_erase(const host_request_t *req)
 static void handle_program_begin(const host_request_t *req)
 {
     uint8_t begin_flags;
+    uint32_t boundary_timeout_ms = 0u;
 
-    if (req->payload_len != 12u) {
+    if ((req->payload_len != PROGRAM_BEGIN_PAYLOAD_V1_SIZE) &&
+        (req->payload_len != PROGRAM_BEGIN_PAYLOAD_V2_SIZE)) {
         send_status_only(req->seq, req->cmd, STATUS_BAD_ARGUMENT);
         return;
     }
@@ -1003,8 +1014,12 @@ static void handle_program_begin(const host_request_t *req)
     s_prog_ctx.block_size = rd_le16(&req->payload[8]);
     s_prog_ctx.window = 1u;
     begin_flags = req->payload[11];
+    if (req->payload_len >= PROGRAM_BEGIN_PAYLOAD_V2_SIZE) {
+        boundary_timeout_ms = rd_le32(&req->payload[12]);
+    }
     s_prog_ctx.ack_trace_word_data = ((begin_flags & PROGRAM_BEGIN_FLAG_ACK_TRACE_WORD_DATA) != 0u) ? 1u : 0u;
     s_prog_ctx.page_diag_enable = ((begin_flags & PROGRAM_BEGIN_FLAG_PAGE_DIAG) != 0u) ? 1u : 0u;
+    s_prog_ctx.page_boundary_ack_timeout_ms = boundary_timeout_ms;
 
     if ((s_prog_ctx.block_size == 0u) || (s_prog_ctx.block_size > PROGRAM_BLOCK_MAX)) {
         s_prog_ctx.active = 0u;

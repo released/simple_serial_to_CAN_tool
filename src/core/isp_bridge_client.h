@@ -19,6 +19,7 @@ struct ProgramProgress {
 struct IspClientOptions {
     std::uint32_t command_timeout_ms = 800;
     std::uint32_t ack_timeout_ms = 1200;
+    std::uint32_t page_boundary_ack_timeout_ms = 15000;
     std::uint32_t max_retries = 1;
     std::uint32_t program_block_size = 64;
     std::uint32_t prefetch_window = 1; // strict mode uses single in-flight block

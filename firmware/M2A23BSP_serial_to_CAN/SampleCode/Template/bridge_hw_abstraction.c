@@ -51,6 +51,11 @@ void bridge_hw_board_init(void)
     CLK_EnableModuleClock(BRIDGE_UART_MODULE);
     CLK_SetModuleClock(BRIDGE_UART_MODULE, BRIDGE_UART_CLKSEL, BRIDGE_UART_CLKDIV);
 
+    CLK->AHBCLK |= CLK_AHBCLK_GPIOACKEN_Msk | CLK_AHBCLK_GPIOBCKEN_Msk |
+                   CLK_AHBCLK_GPIOCCKEN_Msk | CLK_AHBCLK_GPIODCKEN_Msk |
+                   CLK_AHBCLK_GPIOFCKEN_Msk;
+
+
     CLK_EnableModuleClock(BRIDGE_CAN_MODULE);
 
     BRIDGE_BOARD_PINMUX_INIT();

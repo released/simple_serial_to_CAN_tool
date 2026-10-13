@@ -1,0 +1,453 @@
+Dependencies for Project 'Template', Target 'Template': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (..\..\..\Library\Device\Nuvoton\M0A21\Source\system_M0A21.c)(0x609353E5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/system_m0a21.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\Device\Nuvoton\M0A21\Source\ARM\startup_M0A21.s)(0x69F41DE4)(--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 541"-o ./obj/startup_m0a21.o)
+F (..\..\..\Library\StdDriver\src\retarget.c)(0x68917B7F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/retarget.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\StdDriver\src\uart.c)(0x609353E5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/uart.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\StdDriver\src\clk.c)(0x64473F57)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/clk.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\StdDriver\src\sys.c)(0x609353E5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/sys.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\StdDriver\src\can.c)(0x693247E6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/can.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\..\..\Library\StdDriver\src\timer.c)(0x64473F57)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/timer.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+F (..\main.c)(0x69F3F035)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/main.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+I (..\bridge_hw_abstraction.h)(0x69FC0C5F)
+I (..\bridge_host_link.h)(0x69F3E9ED)
+I (..\bridge_nuvoisp_can.h)(0x69F3E3E1)
+F (..\bridge_host_link.c)(0x69F3F0D8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/bridge_host_link.o -MMD)
+I (..\bridge_proto_def.h)(0x69F43629)
+I (..\bridge_host_link.h)(0x69F3E9ED)
+I (..\bridge_hw_abstraction.h)(0x69FC0C5F)
+F (..\bridge_hw_abstraction.c)(0x69FC0D5F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/bridge_hw_abstraction.o -MMD)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+I (..\bridge_board_config.h)(0x6A040E95)
+I (..\bridge_board_config_m0a23.h)(0x69FBFD43)
+I (..\bridge_hw_abstraction.h)(0x69FC0C5F)
+I (..\bridge_can_backend.h)(0x69FC0A5C)
+I (..\bridge_can_backend_m0a23.h)(0x69FC0A5C)
+F (..\bridge_nuvoisp_can.c)(0x6A040EA4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/bridge_nuvoisp_can.o -MMD)
+I (..\bridge_proto_def.h)(0x69F43629)
+I (..\bridge_board_config.h)(0x6A040E95)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\NuMicro.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\M0A21.h)(0x609353E5)
+I (..\..\..\Library\CMSIS\Core\Include\core_cm0.h)(0x68917B7C)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\system_M0A21.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\acmp_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\adc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\can_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\clk_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\crc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\dac_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\fmc_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\gpio_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\hdiv_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pdma_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\pwm_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\sys_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\timer_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\ui2c_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uspi_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\uuart_reg.h)(0x68B51171)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wdt_reg.h)(0x609353E5)
+I (..\..\..\Library\Device\Nuvoton\M0A21\Include\wwdt_reg.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\acmp.h)(0x62C2B7CC)
+I (..\..\..\Library\StdDriver\inc\adc.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\can.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\clk.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\crc.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\dac.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\fmc.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\gpio.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\hdiv.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pdma.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\pwm.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\sys.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\timer.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x68917B7F)
+I (..\..\..\Library\StdDriver\inc\usci_spi.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\usci_uart.h)(0x609353E5)
+I (..\..\..\Library\StdDriver\inc\wdt.h)(0x64473F57)
+I (..\..\..\Library\StdDriver\inc\wwdt.h)(0x609353E5)
+I (..\bridge_board_config_m0a23.h)(0x69FBFD43)
+I (..\bridge_host_link.h)(0x69F3E9ED)
+I (..\bridge_nuvoisp_can.h)(0x69F3E3E1)
+I (..\bridge_hw_abstraction.h)(0x69FC0C5F)
+F (..\misc_config.c)(0x68F24BEE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -ffunction-sections -I ../../../Library/CMSIS/Core/Include -I ../../../Library/Device/Nuvoton/M0A21/Include -I ../../../Library/StdDriver/inc-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM0_DFP/1.0.2/Device/M0A21/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/misc_config.o -MMD)
+I (..\misc_config.h)(0x69F3E4A0)

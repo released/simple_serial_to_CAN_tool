@@ -601,3 +601,48 @@ Workspace: `simple_serial_to_CAN_tool`
   - `bridge_can_backend_<platform>.h`
 - ????? BSP ????????????? `bridge_board_config_*` ? `bridge_can_backend_*` ???
 - ?????? golden sample?????????????????????????? BSP ??????
+### 0) 2026-05-13 M0A21/M0A23 target page-boundary basis fix
+- Scope:
+  - `M2A23` bridge used with `M0A21/M0A23 ISP_CAN` target profile
+- Root cause:
+  - bridge page-boundary delay / erase-ACK diagnostic basis was left at `2048`
+  - target bootloader actually erases on `512-byte` flash page boundaries
+  - first failing block was `addr=0x00000200`, exactly target page boundary, so bridge did not apply boundary settle/extended timeout at the right place
+- Change:
+  - `BRIDGE_TARGET_PAGE_BOUNDARY_BYTES = 512`
+  - `BRIDGE_TARGET_PAGE_SIZE_DIAG_BYTES = 512`
+- Expected effect:
+  - bridge page-boundary pre/post settle and erase-ACK extended timeout now align with target flash erase boundary
+
+### 0) 2026-05-13 M0A23 bridge first-word timeout override
+- Scope:
+  - `M0A21BSP_serial_to_CAN` bridge project used as `M0A23` EVB bridge baseline
+  - PC MFC tool `ProgramBegin` path
+- Change:
+  - bridge page-boundary basis fixed at `512 bytes`
+  - first-word erase guard reduced to `4 bytes`
+  - `ProgramBegin` now accepts an optional `page_boundary_ack_timeout_ms` trailing field
+  - tool now always sends that field and logs the configured value at program start
+- Intent:
+  - timeout policy is chosen by the tool
+  - bridge remains the runtime executor of the tool-provided worst-case timeout
+  - only the first 4-byte word at each `512-byte` boundary receives the extended timeout
+
+### 0) 2026-05-13 bridge baseline rollout
+- Scope:
+  - `M2A23 / M253 / M463 / M467 / NUC131 / NUC240` bridge template projects
+- Change:
+  - align board config boundary basis to `512 bytes`
+  - align first-word erase guard to `4 bytes`
+  - add `ProgramBegin` optional `page_boundary_ack_timeout_ms` support in each bridge `bridge_nuvoisp_can.c`
+- Verification status:
+  - `M2A23` build log generated successfully
+  - `M253 / M463 / M467` source updated, but no fresh `*.build_log.htm` was produced in this environment
+  - `NUC131 / NUC240` source updated; no Keil project file was present under their template folders in this workspace
+
+### 0) 2026-05-13 target erase workaround rollback
+- Scope:
+  - `demo_code/M0A21BSP_ISP_CAN_APROM_demo`
+- Change:
+  - remove the temporary `2KB` multi-page pre-erase workaround
+  - restore page erase trigger to `FMC_FLASH_PAGE_SIZE` boundary so target write path is closer to original BSP ISP_CAN behavior

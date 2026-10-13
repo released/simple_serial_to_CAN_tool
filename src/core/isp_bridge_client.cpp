@@ -301,6 +301,7 @@ bool IspBridgeClient::ProgramImage(const std::vector<std::uint8_t>& image,
            << L", image_size=" << image_size
            << L", block_size=" << block_size
            << L", prefetch=" << window
+           << L", boundary_ack_timeout_ms=" << options_.page_boundary_ack_timeout_ms
            << L", crc32=0x" << std::hex << std::uppercase << image_crc32;
         trace(ss.str());
     }
@@ -772,6 +773,7 @@ std::vector<std::uint8_t> IspBridgeClient::MakeProgramBeginPayload(std::uint32_t
     PutLe16(&payload, block_size);
     payload.push_back(window);
     payload.push_back(flags);
+    PutLe32(&payload, options_.page_boundary_ack_timeout_ms);
     return payload;
 }
 
