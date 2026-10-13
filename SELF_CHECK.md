@@ -41,8 +41,9 @@ Result: PASS / FAIL
 - Verify `scripts\build_mfc.ps1` auto-closes running `SerialToCanIspToolMfc.exe` before build
   (or can be disabled via `-CloseRunningTool $false`).
 - Verify `scripts\clean_mfc.bat` does not remove:
-  - `build\README.md`
-  - `build\.gitkeep`
+  - executable and INI files
+  - required DLLs, data, logs, firmware images, and unknown sentinel files
+- Verify compiler/linker intermediates are removed.
 
 Result: PASS / FAIL
 

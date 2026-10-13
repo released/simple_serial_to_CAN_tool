@@ -19,10 +19,8 @@ Workspace: `simple_serial_to_CAN_tool`
 - `scripts/clean_mfc.bat` previously deleted the whole `build/` directory and recreated it empty.
 - Updated behavior:
   - keep `build/` in place
-  - delete generated build artifacts only
-  - preserve:
-    - `build/README.md`
-    - `build/.gitkeep`
+  - delete only explicitly allowlisted compiler/linker intermediates
+  - preserve executables, INI files, required DLLs, data, logs, firmware images, and unknown delivery files
 - Restored missing files:
   - `build/README.md`
   - `build/.gitkeep`

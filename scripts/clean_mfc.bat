@@ -7,17 +7,13 @@ if not exist "%BUILD_DIR%" (
   if errorlevel 1 exit /b %errorlevel%
 )
 
-for /d %%D in ("%BUILD_DIR%\*") do (
-  if /i not "%%~nxD"==".git" (
-    rmdir /s /q "%%~fD"
-  )
+for %%D in (obj tests verify verify_obj) do (
+  if exist "%BUILD_DIR%\%%D" rmdir /s /q "%BUILD_DIR%\%%D"
+)
+for %%E in (obj pch idb pdb ilk res exp lib iobj ipdb tlog lastbuildstate) do (
+  del /s /f /q "%BUILD_DIR%\*.%%E" >nul 2>nul
 )
 
-for %%F in ("%BUILD_DIR%\*") do (
-  if /i not "%%~nxF"==".gitkeep" if /i not "%%~nxF"=="README.md" (
-    del /f /q "%%~fF"
-  )
-)
-
-echo Clean complete. Preserved: build\README.md, build\.gitkeep
+echo Clean complete. Removed compiler intermediates only.
+echo Preserved executables, INI files, DLLs, data, logs, and other delivery files.
 endlocal
