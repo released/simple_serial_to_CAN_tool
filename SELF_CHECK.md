@@ -2,6 +2,15 @@
 
 請對每一項填寫 PASS / FAIL，若 FAIL 需附原因與修正檔案。
 
+## Clean Safety Follow-up 2026-10-20
+
+- Replaced named-directory purges with a standalone compiler-file allowlist; canonical and legacy entries share the same helper and support non-destructive help.
+- PASS: shared verifier `-CleanBatch scripts/clean_mfc.bat -CleanActualProject -CheckNestedDelivery -CheckReparseRejection`: 17 fixture build sentinels plus source, help/no-deletion, object removal, repeat-clean and junction rejection before deletion.
+- PASS: 1 actual protected build files unchanged (SHA-256).
+- Application source/project resources are unchanged from verified baseline `42fdb92508e11cdc2483eaab883509beb15e4897`. The Release x64 build already passed earlier in this migration; it was not rebuilt or version-bumped just for this clean-only follow-up. This is not a new UI/hardware acceptance claim.
+- NOT RUN: new functional/device/full visual/DPI/Debug acceptance; no hardware writes or user-instance closure.
+- Final commit/publication evidence: workspace `#READ_ME_FIRST#/PROJECT_LAYOUT_MIGRATION.md`.
+
 ## Layout Migration 2026-10-20
 
 - Moved root resource script/icon/screenshot to `src/SerialToCanIspToolMfc.rc`, `src/res/app_icon.ico`, and `docs/images/SerialToCanIspToolMfc.jpg`; initial moves were no-overwrite and SHA-256 verified.

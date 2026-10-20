@@ -1,4 +1,10 @@
 ﻿# AGENTS.md
+## Compiler-File Clean Safety
+
+- Both canonical/legacy clean entries use standalone `scripts/clean_intermediates.ps1`.
+- Preflight all paths/reparse points before deleting allowlisted files only; never recursively purge obj/tests/verify or infer unknown content is disposable.
+- Preserve EXE/INI/DLL/data/log/evidence/unknowns at every nesting level. Codex runs actual clean plus nested-delivery/help/idempotence/junction tests automatically.
+
 ## simple_serial_to_CAN_tool Spec Baseline (2026-05-01)
 
 本文件為目前專案主規格，整合「PC MFC Tool 需求」與「EVB 韌體 bridge 需求」。
