@@ -7,6 +7,11 @@
 ---
 
 ## 1. Platform / Build Constraints
+
+- Follow workspace `#READ_ME_FIRST#/PROJECT_LAYOUT.md` for PC-tool folder layout.
+- Resource script: `src/SerialToCanIspToolMfc.rc`; icon: `src/res/app_icon.ico`;
+  documentation screenshot: `docs/images/SerialToCanIspToolMfc.jpg`.
+- Folder reorganization does not change protocol behavior or firmware/vendor trees.
 - OS: Windows 10/11 x64（目標：任何 Windows 平台可執行）
 - PC Tool: MFC native EXE（不依賴 Python runtime）
 - Driver policy: 不需額外安裝 driver（優先使用 Windows 內建類別驅動）

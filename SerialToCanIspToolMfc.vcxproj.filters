@@ -55,12 +55,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="SerialToCanIspToolMfc.rc">
+    <ResourceCompile Include="src\SerialToCanIspToolMfc.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\app_icon.ico">
+    <Image Include="src\res\app_icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

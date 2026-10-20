@@ -4,7 +4,7 @@ Windows MFC tool for updating a target MCU through a Nuvoton EVB bridge.
 
 The PC tool talks to the EVB over Serial / USB VCOM / USB HID. The EVB then converts the update flow into 8-byte CAN ISP frames for the target bootloader.
 
-![SerialToCanIspToolMfc](./SerialToCanIspToolMfc.jpg)
+![SerialToCanIspToolMfc](docs/images/SerialToCanIspToolMfc.jpg)
 
 ## Overview
 
@@ -98,9 +98,10 @@ Build the project that matches your EVB board.
 
 ## Repository Layout
 
-- [`src/`](./src) : MFC application source
+- [`src/`](./src) : MFC application source, resource script, and `res` icon assets
 - [`scripts/`](./scripts) : build and utility scripts
 - [`docs/`](./docs) : protocol and design notes
+- [`docs/images/`](./docs/images) : documentation screenshots
 - [`firmware/`](./firmware) : EVB firmware projects
 - [`AGENTS.md`](./AGENTS.md) : project rules and engineering baseline
 - [`HANDOFF.md`](./HANDOFF.md) : implementation handoff notes

@@ -161,11 +161,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ResourceCompile Include="SerialToCanIspToolMfc.rc" />
+    <ResourceCompile Include="src\SerialToCanIspToolMfc.rc" />
   </ItemGroup>
 
   <ItemGroup>
-    <Image Include="res\app_icon.ico" />
+    <Image Include="src\res\app_icon.ico" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,6 +2,17 @@
 
 請對每一項填寫 PASS / FAIL，若 FAIL 需附原因與修正檔案。
 
+## Layout Migration 2026-10-20
+
+- Moved root resource script/icon/screenshot to `src/SerialToCanIspToolMfc.rc`, `src/res/app_icon.ico`, and `docs/images/SerialToCanIspToolMfc.jpg`; initial moves were no-overwrite and SHA-256 verified.
+- Updated project/filter/resource paths and relative README link. Application/protocol/firmware/vendor code is unchanged.
+- PASS: Release x64 via `scripts/build_mfc.ps1 -CloseRunningTool $false`, 0 warnings/errors, normal generated version `0.1.0.0031` (completed before the repository-repair interruption; not needlessly bumped again).
+- PASS on resume: shared isolated captioned-frame startup/normal-close, exit 0; no connection or hardware writes.
+- PASS on resume: actual `scripts/clean_mfc.bat`; 1 protected build file unchanged (SHA-256). Fixture retained 9 delivery/runtime sentinels plus source; repeat clean passed.
+- Publication uses the user's existing-delivery policy: update the already tracked EXE only; never newly add private INIs/logs/firmware artifacts. This takes precedence over the older blanket `build/` upload note.
+- NOT RUN: physical bridge/MCU, firmware builds/programming, full UI/DPI and Debug acceptance.
+- Commit/push evidence: workspace `#READ_ME_FIRST#/PROJECT_LAYOUT_MIGRATION.md`.
+
 ==================================================
 Section 1 — Scaffold / Build Baseline
 ==================================================
