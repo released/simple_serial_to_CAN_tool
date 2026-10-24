@@ -2,6 +2,42 @@
 
 請對每一項填寫 PASS / FAIL，若 FAIL 需附原因與修正檔案。
 
+## Verified x64 EXE slimming 2026-10-25
+
+- PASS fresh comparable Release baseline 2777088 bytes (original delivery
+  2776576), formal 683520. Required delivery 2777088 -> 683520 bytes:
+  GUI EXE; optional/generated user settings are not bundled by this check.
+- Baseline SHA: 8D119CF0E2B2C6D66A9A0FC1CE57516A128631BA59C0E84E7BEFF738E0189516.
+- Formal SHA: 99F3BD62BA57A06939F3DC8BE0B06BE9EBF1BE63F26C01267BBD23D91D7786D1.
+- PASS canonical build_mfc.ps1 -Configuration Release -Platform x64
+  -CloseRunningTool $false; isolated MSBuild Debug with version prebuild disabled.
+  Zero reported compiler/linker warnings/errors; SDK informational defaults retained.
+- PASS authorized isolated actual-EXE tests: hash-matched fresh fixtures, identical
+  child-control class counts, owned common-dialog open/cancel, assertion-free Debug
+  startup/close and formal exit 0. No hardware, flash or clipboard actions.
+- Impact: unused x64 MFC registration only; /O2/static runtime/security PE 0x8160,
+  Win32 definitions, protocol/algorithm/firmware sources retained apart from the
+  verified shutdown lifetime fix. Measure startup/control/UI paths, not bus throughput.
+- Original unmodified HEAD Debug reproduces close failure without the exclusion:
+  destructor called CloseCom after child HWND destruction. Resource-only destructor
+  cleanup fixes it; OnClose retains settings/UI shutdown. Isolated Debug and
+  synthetic GUI log flush/exclusive reopen checks now PASS.
+- PASS paired gate: baseline warmups/calibration, five alternating AB/BA pairs,
+  no concurrent compilation. Before-candidate delta max(floor, 10% baseline median,
+  3*MAD); memory 5%; floors startup 25ms/UI 2ms/CPU 16ms/memory 1MiB.
+  All medians remain within baseline-derived observed variability:
+  - StartupMs: 166.5790 -> 146.1533, limit 191.5790.
+  - PeakBytes: 26394624.0000 -> 25976832.0000, limit 27714150.0000.
+  - CpuMs: 234.3750 -> 250.0000, limit 281.3750.
+  - WorkflowMs: 139.9391 -> 141.8514, limit 153.9391.
+- Raw samples/limits: docs/verification/exe-slimming-20261025.json.
+- PASS actual clean_mfc.bat: 24 compiler files removed, 1 protected actual
+  files SHA unchanged; 17 nested fixture files/source, help/idempotence PASS.
+  Unchanged earlier junction-rejection evidence is reused, not rerun. Personal
+  root INI hashes match the pre-build manifest without inspecting private values.
+- NOT RUN: physical devices/protocol, unrelated firmware, visual/DPI, clean-PC,
+  Win32 builds. No new driver/runtime, feature removal or global /O1 preset.
+
 ## Clean Safety Follow-up 2026-10-20
 
 - Replaced named-directory purges with a standalone compiler-file allowlist; canonical and legacy entries share the same helper and support non-destructive help.

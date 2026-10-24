@@ -4,6 +4,22 @@ Workspace: `simple_serial_to_CAN_tool`
 
 ---
 
+## Verified x64 EXE slimming 2026-10-25
+
+- Canonical Release and isolated Debug builds, owned control/dialog/normal-close
+  checks and five alternating performance pairs PASS; no real INI/device/clipboard.
+- EXE 2777088 -> 683520 bytes; required files 2777088 -> 683520 bytes.
+- SHA-256: 99F3BD62BA57A06939F3DC8BE0B06BE9EBF1BE63F26C01267BBD23D91D7786D1.
+- Actual clean removed 24 compiler files; all 1 protected actual
+  files unchanged by SHA. Nested fixtures/help/idempotence PASS.
+- Original unmodified HEAD Debug reproduces close failure without the exclusion:
+  destructor called CloseCom after child HWND destruction. Resource-only destructor
+  cleanup fixes it; OnClose retains settings/UI shutdown. Isolated Debug and
+  synthetic GUI log flush/exclusive reopen checks now PASS.
+- Raw sanitized samples/limits: docs/verification/exe-slimming-20261025.json.
+  Physical devices, firmware, visual/DPI/clean-PC/Win32 acceptance NOT RUN.
+- Ordinary publication commit/remote SHA: shared EXE_SLIMMING_PROGRESS.md.
+
 ## Clean Safety Follow-up 2026-10-20
 
 - Replaced named-directory purges with a standalone compiler-file allowlist; canonical and legacy entries share the same helper and support non-destructive help.

@@ -1,4 +1,12 @@
 ﻿# AGENTS.md
+## Verified x64 EXE slimming 2026-10-25
+
+- x64 only: exclude unused MFC dialog-control registration; preserve /O2,
+  static CRT/MFC, security, Win32 definitions and required runtime files.
+- Re-evaluate before adding CMFC/extended dialog controls. SELF_CHECK and
+  docs/verification/exe-slimming-20261025.json record scoped evidence/limits.
+- Destructors release resources without accessing already-destroyed HWNDs.
+
 ## Compiler-File Clean Safety
 
 - Both canonical/legacy clean entries use standalone `scripts/clean_intermediates.ps1`.

@@ -6,6 +6,13 @@ The PC tool talks to the EVB over Serial / USB VCOM / USB HID. The EVB then conv
 
 ![SerialToCanIspToolMfc](docs/images/SerialToCanIspToolMfc.jpg)
 
+## Release size
+
+Release x64 EXE: 683520 bytes (comparable baseline 2777088).
+Features, static runtime, required files and Win32 settings are retained.
+See SELF_CHECK.md and the sanitized [verification record](docs/verification/exe-slimming-20261025.json)
+for actual scope, measurements and limitations.
+
 ## Compiler-Only Clean
 
 `scripts/clean_mfc.bat` and the existing clean entry remove known compiler files

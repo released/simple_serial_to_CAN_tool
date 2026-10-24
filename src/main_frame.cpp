@@ -86,8 +86,13 @@ CMainFrame::CMainFrame() {
 }
 
 CMainFrame::~CMainFrame() {
-    StopLogRecording(false);
-    CloseCom();
+    // Child HWNDs are already destroyed here; release resources without UI calls.
+    if (log_record_fp_ != nullptr) {
+        fflush(log_record_fp_);
+        fclose(log_record_fp_);
+        log_record_fp_ = nullptr;
+    }
+    serial_port_.Close();
 }
 
 BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs) {

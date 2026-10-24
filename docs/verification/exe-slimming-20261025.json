@@ -1,0 +1,178 @@
+{
+  "Date": "2026-10-25",
+  "Target": "Release|x64",
+  "Toolchain": "MSVC 14.44.35207",
+  "Candidate": [
+    {
+      "StartupMs": 195.04080000000002,
+      "WorkflowMs": 140.6061,
+      "CpuMs": 250,
+      "PeakBytes": 25952256
+    },
+    {
+      "StartupMs": 149.6961,
+      "WorkflowMs": 168.3659,
+      "CpuMs": 265.625,
+      "PeakBytes": 25976832
+    },
+    {
+      "StartupMs": 137.7064,
+      "WorkflowMs": 135.73770000000002,
+      "CpuMs": 203.125,
+      "PeakBytes": 25976832
+    },
+    {
+      "StartupMs": 144.6004,
+      "WorkflowMs": 164.1755,
+      "CpuMs": 281.25,
+      "PeakBytes": 25980928
+    },
+    {
+      "StartupMs": 146.1533,
+      "WorkflowMs": 141.8514,
+      "CpuMs": 218.75,
+      "PeakBytes": 25980928
+    }
+  ],
+  "OriginalExeBytes": 2776576,
+  "BaselineBytes": 2777088,
+  "FormalBytes": 683520,
+  "BaselineSHA256": "8D119CF0E2B2C6D66A9A0FC1CE57516A128631BA59C0E84E7BEFF738E0189516",
+  "FormalSHA256": "99F3BD62BA57A06939F3DC8BE0B06BE9EBF1BE63F26C01267BBD23D91D7786D1",
+  "RequiredFiles": [
+    "SerialToCanIspToolMfc.exe"
+  ],
+  "DeliveryBeforeBytes": 2777088,
+  "DeliveryAfterBytes": 683520,
+  "Profile": "SerialCan",
+  "Samples": 5,
+  "Order": "baseline calibration before candidate; alternating AB/BA measured pairs",
+  "Limits": {
+    "StartupMs": {
+      "Median": 148.6352,
+      "MAD": 4.4979000000000156,
+      "AllowedDelta": 25
+    },
+    "PeakBytes": {
+      "Median": 26390528,
+      "MAD": 12288,
+      "AllowedDelta": 1319526
+    },
+    "CpuMs": {
+      "Median": 265.625,
+      "MAD": 15.625,
+      "AllowedDelta": 47
+    },
+    "WorkflowMs": {
+      "Median": 139.57680000000002,
+      "MAD": 3.166799999999995,
+      "AllowedDelta": 14
+    }
+  },
+  "Checks": [
+    {
+      "Metric": "StartupMs",
+      "BaselineMedian": 166.579,
+      "CandidateMedian": 146.1533,
+      "Limit": 191.579,
+      "Pass": true
+    },
+    {
+      "Metric": "PeakBytes",
+      "BaselineMedian": 26394624,
+      "CandidateMedian": 25976832,
+      "Limit": 27714150,
+      "Pass": true
+    },
+    {
+      "Metric": "CpuMs",
+      "BaselineMedian": 234.375,
+      "CandidateMedian": 250,
+      "Limit": 281.375,
+      "Pass": true
+    },
+    {
+      "Metric": "WorkflowMs",
+      "BaselineMedian": 139.9391,
+      "CandidateMedian": 141.8514,
+      "Limit": 153.9391,
+      "Pass": true
+    }
+  ],
+  "ControlShapePass": true,
+  "Calibration": [
+    {
+      "StartupMs": 141.3005,
+      "WorkflowMs": 136.9968,
+      "CpuMs": 281.25,
+      "PeakBytes": 26390528
+    },
+    {
+      "StartupMs": 153.1331,
+      "WorkflowMs": 156.9212,
+      "CpuMs": 265.625,
+      "PeakBytes": 26378240
+    },
+    {
+      "StartupMs": 148.6352,
+      "WorkflowMs": 135.6973,
+      "CpuMs": 187.5,
+      "PeakBytes": 26378240
+    },
+    {
+      "StartupMs": 146.0977,
+      "WorkflowMs": 142.74360000000001,
+      "CpuMs": 296.875,
+      "PeakBytes": 26402816
+    },
+    {
+      "StartupMs": 157.6377,
+      "WorkflowMs": 139.57680000000002,
+      "CpuMs": 265.625,
+      "PeakBytes": 26394624
+    }
+  ],
+  "Baseline": [
+    {
+      "StartupMs": 150.3728,
+      "WorkflowMs": 139.9391,
+      "CpuMs": 218.75,
+      "PeakBytes": 26378240
+    },
+    {
+      "StartupMs": 189.2349,
+      "WorkflowMs": 142.63400000000001,
+      "CpuMs": 234.375,
+      "PeakBytes": 26386432
+    },
+    {
+      "StartupMs": 154.34470000000002,
+      "WorkflowMs": 139.506,
+      "CpuMs": 234.375,
+      "PeakBytes": 26411008
+    },
+    {
+      "StartupMs": 166.579,
+      "WorkflowMs": 164.26000000000002,
+      "CpuMs": 265.625,
+      "PeakBytes": 26394624
+    },
+    {
+      "StartupMs": 273.58000000000004,
+      "WorkflowMs": 137.9241,
+      "CpuMs": 218.75,
+      "PeakBytes": 26406912
+    }
+  ],
+  "Clean": {
+    "Protected": 1,
+    "RemovedCompilerFiles": 24
+  },
+  "NotRun": [
+    "Physical devices/firmware",
+    "Visual/DPI",
+    "Clean-PC",
+    "Win32 builds"
+  ],
+  "AdditionalFix": "Original HEAD Debug also failed shutdown; destructor now closes resources without dead-HWND access. GUI log flush/exclusive reopen and Debug exit pass."
+}
