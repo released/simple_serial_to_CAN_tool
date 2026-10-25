@@ -6,20 +6,6 @@ The PC tool talks to the EVB over Serial / USB VCOM / USB HID. The EVB then conv
 
 ![SerialToCanIspToolMfc](docs/images/SerialToCanIspToolMfc.jpg)
 
-## Release size
-
-Release x64 EXE: 683520 bytes (comparable baseline 2777088).
-Features, static runtime, required files and Win32 settings are retained.
-See SELF_CHECK.md and the sanitized [verification record](docs/verification/exe-slimming-20261025.json)
-for actual scope, measurements and limitations.
-
-## Compiler-Only Clean
-
-`scripts/clean_mfc.bat` and the existing clean entry remove known compiler files
-only. Complete path/link preflight rejects reparse points before deletion;
-EXE/INI/DLL/data/log/evidence/unknowns are preserved even under obj/tests/verify.
-No additional manual setup is required.
-
 ## Overview
 
 This project contains:
@@ -97,6 +83,11 @@ Each BSP folder contains its own Keil project under:
 - `firmware/<BSP>/SampleCode/Template/Keil/`
 
 Build the project that matches your EVB board.
+
+### Compiler Cleanup
+
+Run `scripts\clean_mfc.bat` to remove compiler intermediates. The executable,
+INI settings, required DLLs, firmware images, logs and user data are retained.
 
 ## Quick Start
 
