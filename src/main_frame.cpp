@@ -1,4 +1,5 @@
-﻿#include "main_frame.h"
+#include "main_frame.h"
+#include "tool_build_identity.h"
 
 #include <afxdlgs.h>
 
@@ -113,6 +114,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
     if (CFrameWnd::OnCreate(lpCreateStruct) == -1) {
         return -1;
     }
+    if (!build_identity_.Create(m_hWnd, TOOL_BUILD_VERSION_W, TOOL_BUILD_DISPLAY_TIME_W,
+                                TOOL_BUILD_TIMESTAMP_ISO_W)) return -1;
 
     HICON hIcon = AfxGetApp()->LoadIcon(IDI_APP_ICON);
     SetIcon(hIcon, TRUE);
@@ -238,11 +241,14 @@ void CMainFrame::LayoutControls(int cx, int cy) {
     }
 
     const int margin = 8;
+    build_identity_.SetFont(reinterpret_cast<HFONT>(ui_font_.GetSafeHandle()));
+    build_identity_.Place(cx - margin, margin, (std::max)(0, cx - margin * 2));
+    const int header_height = build_identity_.Height() + margin;
     const int gap = 6;
     const int row_h = 28;
     const int btn_w = 100;
 
-    int y = margin;
+    int y = margin + header_height;
     int x = margin;
 
     com_label_.MoveWindow(x, y + 4, 40, 20);
@@ -308,6 +314,7 @@ void CMainFrame::LayoutControls(int cx, int cy) {
     if (log_h > 0) {
         log_edit_.MoveWindow(margin, y, cx - margin * 2, log_h);
     }
+    build_info_label_.ShowWindow(SW_HIDE);
 }
 
 void CMainFrame::AppendLog(const std::wstring& text) {

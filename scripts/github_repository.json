@@ -1,0 +1,14 @@
+{
+  "publication_enabled": true,
+  "repository": "released/simple_serial_to_CAN_tool",
+  "visibility": "PUBLIC",
+  "branch": "main",
+  "readme_title": "simple_serial_to_CAN_tool",
+  "identity_files": [
+    "README.md",
+    "SerialToCanIspToolMfc.vcxproj"
+  ],
+  "delivery_files": [
+    "build/SerialToCanIspToolMfc.exe"
+  ]
+}

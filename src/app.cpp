@@ -22,7 +22,7 @@ BOOL CSerialToCanIspToolApp::InitInstance() {
     }
 
     m_pMainWnd = frame;
-    frame->ShowWindow(SW_SHOW);
+    frame->ShowWindow(SW_SHOWMAXIMIZED);
     frame->UpdateWindow();
     return TRUE;
 }
