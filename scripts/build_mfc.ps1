@@ -12,12 +12,8 @@ $bumpScript = Join-Path $PSScriptRoot "bump_version.ps1"
 $toolExe = Join-Path $repoRoot "build\SerialToCanIspToolMfc.exe"
 
 if ($CloseRunningTool) {
-    $running = Get-Process -Name "SerialToCanIspToolMfc" -ErrorAction SilentlyContinue
-    if ($running) {
-        Write-Host "Closing running SerialToCanIspToolMfc.exe before build..."
-        $running | Stop-Process -Force
-        Start-Sleep -Milliseconds 300
-    }
+    . (Join-Path $PSScriptRoot 'close_exact_tool_for_build.ps1')
+    Close-ExactToolForBuild -ExecutablePath (Join-Path $repoRoot 'build\SerialToCanIspToolMfc.exe')
 }
 
 $msbuild = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
